@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Products Grid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f2f2f2;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 30px;
+      color: white;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 170px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #00bcd4;
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      list-style: none;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .card ul {
+      margin: 6px 0;
+      padding: 5px;
+    }
+
+    .card li {
+      margin: 6px 0;
+      padding: 2px;
+    }
+
+    .card button {
+      padding: 10px 22px;
+      border: none;
+      background-color: #00bcd4;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    h2{
+      padding: 30px;
+      text-align: center;
+      font-display: block;
+    }
+
+    .card img{
+      width: 250px;
+      height: 250px;
+    }
+
+    hr{
+      border: 1px solid black;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      padding: 40px;
+    }
+
+    .card button:hover {
+      background-color: #0097a7;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      padding: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>Smart Products Store</nav>
+
+<section class="product-grid">
+
+  <div class="card">
+    <img src="smart watch.webp">
+    <h3>Smart Watch Pro</h3><hr>
+    <ul>
+      <li>Heart Rate Monitor</li>
+      <li>GPS Tracking</li>
+      <li>Water Resistant</li>
+    </ul>
+    <a href="buy page.html"><button>Buy Now</button></a>
+  </div>
+
+  <div class="card">
+    <img src="band.jpeg">
+    <h3>Smart Band X</h3><hr>
+    <ul>
+      <li>Step Counter</li>
+      <li>Sleep Tracking</li>
+      <li>7-Day Battery</li>
+    </ul>
+    <a href="buy page.html"><button>Buy Now</button></a>
+  </div>
+
+  <div class="card">
+    <img src="earbuds.webp">
+    <h3>Smart Earbuds</h3><hr>
+    <ul>
+      <li>Noise Cancellation</li>
+      <li>Bluetooth 5.2</li>
+      <li>Fast Charging</li>
+    </ul>
+    <a href="buy page.html"><button>Buy Now</button></a>
+  </div>
+
+  <div class="card">
+    <img src="speaker.jpg">
+    <h3>Smart Speaker</h3><hr>
+    <ul>
+      <li>Voice Assistant</li>
+      <li>Wi-Fi Enabled</li>
+      <li>HD Sound</li>
+    </ul>
+    <a href="buy page.html"><button>Buy Now</button></a>
+  </div>
+
+  <div class="card">
+    <img src="tv.jpg">
+    <h3>Smart TV</h3><hr>
+    <ul>
+      <li>4K Display</li>
+      <li>Android OS</li>
+      <li>Screen Mirroring</li>
+    </ul>
+    <a href="buy page.html"><button>Buy Now</button></a>
+  </div>
+
+  <div class="card">
+    <img src="home hub.jpg">
+    <h3>Smart Home Hub</h3><hr>
+    <ul>
+      <li>Control All Devices</li>
+      <li>Mobile App</li>
+      <li>Voice Control</li>
+    </ul>
+    <a href="buy page.html"><button>Buy Now</button></a>
+  </div>
+
+  <div class="card">
+    <img src="camera.png">
+    <h3>Smart Security Camera</h3><hr>
+    <ul>
+      <li>Night Vision</li>
+      <li>Motion Detection</li>
+      <li>Live Streaming</li>
+    </ul>
+    <a href="buy page.html"><button>Buy Now</button></a>
+  </div>
+
+  <div class="card">
+    <img src="bulb.avif">
+    <h3>Smart LED Bulb</h3><hr>
+    <ul>
+      <li>Color Control</li>
+      <li>App Enabled</li>
+      <li>Energy Saving</li>
+    </ul>
+    <a href="buy page.html"><button>Buy Now</button></a>
+  </div>
+
+  <div class="card">
+    <img src="fridge.jpg">
+    <h3>Smart Refridgerator</h3><hr>
+    <ul>
+      <li>Touch screen display</li>
+      <li>Mobile app control</li>
+      <li>Food freshness monitoring</li>
+    </ul>
+    <a href="buy page.html"><button>Buy Now</button></a>
+  </div>
+
+  <div class="card">
+    <img src="Air conditioner.webp">
+    <h3>Smart Air Conditioner</h3><hr>
+    <ul>
+      <li>Timer and scheduling</li>
+      <li>Air quality filter</li>
+      <li>Voice assistant support</li>
+    </ul>
+    <a href="buy page.html"><button>Buy Now</button></a>
+  </div>
+
+  <div class="card">
+    <img src="thermometer.webp">
+    <h3>Smart Thermometer</h3><hr>
+    <ul>
+      <li>Digital temperature display</li>
+      <li>Touch-free measurement option</li>
+      <li>Child-friendly design</li>
+    </ul>
+    <a href="buy page.html"><button>Buy Now</button></a>
+  </div>
+
+  <div class="card">
+    <img src="weight machine.jpg">
+    <h3>Smart Weight Scale</h3><hr>
+    <ul>
+      <li>High accuracy sensors</li>
+      <li>BMI calculation</li>
+      <li>Body fat measurement</li>
+    </ul>
+    <a href="buy page.html"><button>Buy Now</button></a>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Smart Products Store
+</footer>
+
+</body>
+</html>

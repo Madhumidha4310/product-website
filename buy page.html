@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy Product</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .buy-container {
+      max-width: 400px;
+      margin: 60px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00bcd4;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #00bcd4;
+      margin: 15px 0;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #00bcd4;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0097a7;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="buy-container">
+  <h2>Buy Product</h2>
+  <hr>
+
+  <form>
+
+    <!-- PRODUCT DROPDOWN -->
+    <label>Product Name</label>
+    <select id="product" onchange="updatePrice()">
+      <option value="2999">Smart Watch</option>
+      <option value="1999">Smart Band X</option>
+      <option value="3499">Smart Earbuds</option>
+      <option value="4999">Smart Speaker</option>
+      <option value="45000">Smart TV</option>
+      <option value="7999">Smart Home Hub</option>
+      <option value="6999">Smart Security Camera</option>
+      <option value="799">Smart LED Bulb</option>
+      <option value="60000">Smart Refrigerator</option>
+      <option value="45000">Smart Air Conditioner</option>
+      <option value="1999">Smart Thermometer</option>
+      <option value="2499">Smart Weight Scale</option>
+
+    </select>
+
+    <!-- PRICE -->
+    <label>Price (₹)</label>
+    <input type="text" id="price" readonly>
+
+    <label>Customer Name</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email">
+
+    <label>Address</label>
+    <textarea rows="3" placeholder="Enter delivery address"></textarea>
+
+    <a href="web.html"><button>Place Order</button></a>
+  </form>
+</div>
+
+<script>
+  function updatePrice() {
+    var productPrice = document.getElementById("product").value;
+    document.getElementById("price").value = productPrice;
+  }
+</script>
+
+</body>
+</html>
